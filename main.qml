@@ -11,6 +11,8 @@ Window {
     height: 1080
     //    title: qsTr("Hello World")
 
+
+
     Rectangle{
         id:navgation
         width:140
@@ -35,15 +37,54 @@ Window {
                 anchors.topMargin: 30
                 source: "qrc:/new/prefix1/ImageUI/logo.png"
             }
-
+            /***
             Button{
                width:140
                height:78
                text : qsTr("用户")
-               y:262
-               icon.source:"qrc:/new/prefix1/ImageUI/time.png"
+               y:262            //icon使用彩色图标时，颜色会变成灰白并且图标会发生变化
+               icon.source:"qrc:/left/ImageUI/leftNavgation/evaluate_select.png"
                display: AbstractButton.TextUnderIcon
             }
+            ****/
+
+            Column{
+                spacing : 10
+                anchors.left: parent.left
+                anchors.top: logo.bottom
+                anchors.topMargin: 100
+
+                IconButton{
+                    id :userBtn
+                    img_src: "qrc:/left/ImageUI/leftNavgation/user_normal.png"
+                    btn_txt: qsTr("用户")
+                }
+                IconButton{
+                    id :evaluateBtn
+                    img_src: "qrc:/left/ImageUI/leftNavgation/evaluate_normal.png"
+                    btn_txt: qsTr("评估")
+
+                }
+                IconButton{
+                    id :trainBtn
+                    img_src: "qrc:/left/ImageUI/leftNavgation/training_normal.png"
+                    btn_txt: qsTr("训练")
+
+                }
+                IconButton{
+                    id :recordBtn
+                    img_src: "qrc:/left/ImageUI/leftNavgation/record_normal.png"
+                    btn_txt: qsTr("记录")
+
+                }
+                IconButton{
+                    id :setdBtn
+                    img_src: "qrc:/left/ImageUI/leftNavgation/set_normal.png"
+                    btn_txt: qsTr("设置")
+
+                }
+            }
+
         }
 
         DropShadow{

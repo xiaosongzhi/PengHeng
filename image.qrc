@@ -1,6 +1,17 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>ImageUI/logo.png</file>
-        <file>ImageUI/time.png</file>
+    </qresource>
+    <qresource prefix="/left">
+        <file>ImageUI/leftNavgation/evaluate_normal.png</file>
+        <file>ImageUI/leftNavgation/evaluate_select.png</file>
+        <file>ImageUI/leftNavgation/record_normal.png</file>
+        <file>ImageUI/leftNavgation/record_select.png</file>
+        <file>ImageUI/leftNavgation/set_normal.png</file>
+        <file>ImageUI/leftNavgation/set_select.png</file>
+        <file>ImageUI/leftNavgation/training_normal.png</file>
+        <file>ImageUI/leftNavgation/training_select.png</file>
+        <file>ImageUI/leftNavgation/user_normal.png</file>
+        <file>ImageUI/leftNavgation/user_select.png</file>
     </qresource>
 </RCC>
